@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script language="JavaScript">
+day=new Date()     //..get the date
+
+x=day.getHours()    //..get the hour
+
+if(	x>=6 && x<12 ) {
+
+   document.write('<style type="text/css">body{background: white url(morning.jpg);background-size:cover}"></style>')
+
+} else if(x>=12 && x<16) {
+
+   document.write('<style type="text/css">body{background: white url(noon.jpg);background-size:cover}</style>')
+
+} else if(x>=16 && x < 19) {
+
+   document.write('<style type="text/css">body{background: white url(evening.jpg);background-size:cover}</style>')
+
+} else if (	x>=19 && x<6) {
+
+   document.write('<style type="text/css">body{background: white url(night.jpg); background-size:cover}</style>')
+}
+</script>
+</head>
+<body style="
+    text-align: center;
+    margin: 20% auto;
+    font-family: Helvetica;
+    color: darkgray;
+    font-size: 70px;
+    //background: rgba(0,0,0,0.74);
+">
+<a  style="font-size:20px;
+			float:right;
+			text-decoration:none;
+			color:lightblue;
+			margin-right:2%;
+			margin-top:-18%;
+			padding:2%;
+			"
+	href="javascript:location.reload(true)">
+	Reload This Page
+</a>
+<script language="JavaScript">
+var Quotation=new Array() // do not change this!
+
+// Set up the quotations to be shown, below.
+// To add more quotations, continue with the
+// pattern, adding to the array.  Remember
+// to increment the Quotation[x] index!
+
+Quotation[0] = "Time is of the essence! Comb your hair.";
+Quotation[1] = "Sanity is a golden apple with no shoelaces.";
+Quotation[2] = "Repent! The end is coming, $9.95 at Amazon.";
+Quotation[3] = "Honesty blurts where deception sneezes.";
+Quotation[4] = "Pastry satisfies where art is unavailable.";
+Quotation[5] = "Delete not, lest you, too, be deleted.";
+Quotation[6] = "O! Youth! What a pain in the backside.";
+Quotation[7] = "Wishes are like goldfish with propellors.";
+Quotation[8] = "Love the river's \"beauty\", but live on a hill.";
+Quotation[9] = "Invention is the mother of too many useless toys.";
+
+// ======================================
+// Do not change anything below this line
+// ======================================
+var Q = Quotation.length;
+var whichQuotation=Math.round(Math.random()*(Q-1));
+function showQuotation(){document.write(Quotation[whichQuotation]);}
+showQuotation();
+</script>
+
+</body>
+</html>
