@@ -7,13 +7,13 @@
 	<script language="JavaScript">
 		day=new Date()     //..get the date
 		x=day.getHours()    //..get the hour
-		if(	x>=6 && x<12 ) {
+		if(x>=17 && x<12) {
 			document.write('<style type="text/css">body{background: white url(morning.jpg);background-size:cover}"></style>')
 		} else if(x>=12 && x<16) {
 			document.write('<style type="text/css">body{background: white url(noon.jpg);background-size:cover}</style>')
 		} else if(x>=16 && x < 19) {
 			document.write('<style type="text/css">body{background: white url(evening.jpg);background-size:cover}</style>')
-		} else if (	x>=19 && x<6) {
+		} else if (x>=19 && x<17) {
 			document.write('<style type="text/css">body{background: white url(night.jpg); background-size:cover}</style>')
 		}
 	</script>
